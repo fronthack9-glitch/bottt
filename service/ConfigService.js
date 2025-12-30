@@ -1,5 +1,3 @@
-import { config } from 'dotenv'
-
 export class ConfigService {
     get(key) {
       const value = process.env[key]
