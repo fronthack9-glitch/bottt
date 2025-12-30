@@ -6,10 +6,10 @@ export class ConfigService {
     if (error || !parsed) {
       throw new Error("Ошибка прочтения env");
     }
-    this.config = parsed;
+    this.data = parsed;
   }
   get(key) {
-    const res = this.config[key];
+    const res = this.data[key];
     if (!res) {
       throw new Error("Такого ключа нет в env");
     }
